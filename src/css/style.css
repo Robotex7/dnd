@@ -1,0 +1,173 @@
+body {
+  background: rgb(122,192,255);
+  background: linear-gradient(0deg, rgba(122,192,255,1) 0%, rgba(48,163,255,1) 54%, rgba(0,138,255,1) 100%);
+  background-attachment: fixed;
+  }
+  
+  .main_container {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 1440px
+  }
+  
+  .column {
+      background-color: #DDDFE7;
+      margin: 0 auto;
+      border-radius: 4px;
+      min-width: 436px;
+      min-height: 350px;
+  }
+  
+  .column_title {
+      margin: 16px;
+  }
+  
+  .column__card {
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      max-width: 405px;
+      margin-left: 16px;
+      border-radius: 3px;
+      justify-content: space-between;
+      margin-bottom: 40px;
+  }
+  
+  .todo_container {
+      background-color: #DDDFE7;
+      margin: 0 auto;
+      border-radius: 4px;
+      min-width: 436px;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  
+  .inprog {
+      background-color: #DDDFE7;
+      margin: 0 auto;
+      border-radius: 4px;
+      min-width: 436px;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  
+  .done {
+      background-color: #DDDFE7;
+      margin: 0 auto;
+      border-radius: 4px;
+      min-width: 436px;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  
+  .adding_card {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .column__card-content {
+      margin: 16px;
+      word-break: break-all;
+  }
+  
+  .column__card-button {
+      min-width: 25px;
+      height: 25px;
+      box-shadow: 0px 10 10px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+      background: #3379b77a;
+      margin: 10px;
+      position: relative;
+      display: block;
+      z-index: 200;
+      text-indent: -9999px;
+      cursor: pointer;
+  }
+  .column__card-button:before,
+  .column__card-button:after {
+      content: '';
+      width: 80%;
+      height: 2px;
+      background: #ffffff;
+      position: absolute;
+      top: 48%;
+      left: 10%;
+      transform: rotate(45deg);
+      transition: all 0.3s ease-out;
+  }
+  .column__card-button:after {
+      transform: rotate(-45deg);
+      transition: all 0.3s ease-out;
+  }
+  .column__card-button:hover:before,
+  .column__card-button:hover:after {
+      transform: rotate(180deg);
+      background: #FFF; 
+  }
+  
+  .column__card-content_add {
+      margin: 10px;
+      min-width: 250px;
+      min-height: 65px;
+      max-width: 300px;
+      max-height: 100px;
+  }
+  
+  .add_card {
+        align-items: center;
+        appearance: button;
+        background-color: #0276FF;
+        border-radius: 8px;
+        border-style: none;
+        box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 0;
+        font-family: "RM Neue",sans-serif;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+        padding: 10px 21px;
+        text-align: center;
+        text-transform: none;
+        transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        max-width: 130px;
+        max-height: 35px;
+        margin: 10px;
+      }
+      
+      .add_card:active {
+        background-color: #006AE8;
+      }
+      
+      .add_card:hover {
+        background-color: #1C84FF;
+      }
+  
+      .is-dragging {
+          opacity: 0.5;
+          transform: translate3d(0, 0, 0); 
+          transition: transform 0ms, opacity 0ms; 
+          cursor: grabbing; 
+          z-index: 1000;
+      }
+  
+      .column__card:hover {
+          cursor: grab;
+      }
+  
+      .hovered {
+  
+      }
